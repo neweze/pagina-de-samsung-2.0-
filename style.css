@@ -1,0 +1,515 @@
+/* Inicio de la parte para las TRES paginas */
+    
+    /* usamos el asterisco para que la fuente se aplique a toda la pagina */
+    * {
+        font-family: 'Poppins', sans-serif;
+    }
+
+    /*Botones "Inicio" "Productos" "duda"*/
+    nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.65);
+    width: 100%;
+    padding-bottom: 30px;
+    animation: rgb 5s infinite;
+    }
+
+    .Inicio{ 
+    margin-left:auto;
+    width: 150px;
+    height: 50px;
+    background-color: transparent;
+    border-color: transparent;
+    border-style: none;
+
+    }
+    .Productos{ 
+    margin-left: auto;
+    width: 150px;
+    height: 50px;
+    background-color: transparent;
+    border-color: transparent;
+    border-style: none;
+    }
+    .Ofertas{
+    margin-left: auto;
+    width: 150px;
+    height: 50px;
+    background-color: transparent;
+    border-color: transparent;
+    border-style: none;
+    }
+    
+    .boton {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 30px;
+    font-size: 1.2rem;
+    border-radius: 105px;
+    border: solid 2px darkblue;
+    }
+    
+    .boton:hover {
+    cursor: pointer;
+    color: whitesmoke;
+    background-color: black;
+    transition: 250ms;
+    text-align: center;
+    }
+
+    .link-paginas {
+        text-decoration: none;
+    }
+    .link-paginas:hover {
+    color: whitesmoke;
+    background-color: black;
+    transition: 250ms;
+    }
+
+    /*Animacion RGB*/
+    @keyframes rgb {
+        0% , 100%{
+            border: 5px solid #df5f09;
+        }
+        10% {
+            border: 5px solid #f3d007;
+        }
+        20% {
+            border: 5px solid #0ee00e;
+        }
+        30% {
+            border: 5px solid #0bd3b8;
+        }
+        40% {
+            border: 5px solid #0d09d8;
+        }
+        60% {
+            border: 5px solid #ee04ee;
+        }
+        80% {
+            border: 5px solid #ff0000;
+        }
+    }
+
+    /* Inicio del encabezado */
+    header {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.65);
+    width: 100%;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    animation: rgb 5s infinite;
+    }
+
+    header h1 {
+        font-weight: bold;
+        color: darkblue;
+    }
+
+    /*El body*/
+    body {
+        color: whitesmoke;
+        background-color: #0c192c;
+        background-size: cover;
+        background-image: url(imagenes/productos/fondos/otrofondo.jpg);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+    }
+
+
+    /* Inicio del footer */
+    footer {
+        display: flex;
+        background: rgba(28, 28, 27, 0.75);
+        height: auto;
+        width: 100%;
+    }
+
+    footer a {
+        display: flex;
+        justify-content: center;
+        cursor: default;
+    }
+
+    .foot {
+        cursor: pointer;
+        display: flex;
+        border-radius: 20px;
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-bottom: 15px;
+    }
+
+    .foot:hover{
+        border-radius: 20px;
+        border: 5px solid #e3a702;
+        transition: 1s;
+    }
+
+    .redsocial {
+        margin: 50px 
+    }
+    
+    /* Fin del footer */
+    
+
+/* Fin de la parte que es para las TRES PAGINAS */
+
+/* Pagina INICIO */
+    section {
+	    width: 100%;
+	    display: flex;
+    }
+
+    article {
+        width: 70%;
+    }
+
+    aside {
+        width: 30%;
+        border-radius: 20px;
+        height: auto;
+    }
+
+    .slider{
+	    width: 100%;
+	    height: auto;
+	    overflow: hidden;
+    }
+    .slider ul{
+	    display: flex;
+	    animation: cambio 8s infinite alternate linear;
+	    width: 400%;
+    }
+    .slider li{
+	    width: 500%;
+	    list-style: none;
+    }
+    .slider img{
+        width: 100%;
+        height: 70%;
+    }
+
+    @keyframes cambio{
+        0%{margin-left: 0%}
+        20%{margin-left: 0%}
+    
+        25%{margin-left: -100%}
+        45%{margin-left: -100%}
+    
+        50%{margin-left: -200%}
+        70%{margin-left: -200%}
+    
+        75%{margin-left: -300%}
+        100%{margin-left: -300%}
+    }    
+/* Fin de la Pagina INICIO */
+
+    /*Todos los titulos h1 de la pagina productos*/
+.body-productos-ofertas h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    }
+
+/*Inicio de la pagina de PRODUCTOS*/
+
+
+    /*Seccion de los productos destacados*/
+    #destacados {
+    padding-top: 100px;
+    text-align: center;
+    border-bottom: solid 4px #168dc4;
+    text-transform: uppercase;
+    }
+
+    /* Esta parte es sacada de un video de un youtube */
+    .wrapper {
+    margin-top: 5%;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    }
+
+    .container {
+    height: 400px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+    }
+
+    .card {
+
+    width: 80px;
+    border-radius: .75rem;
+    background-size: cover;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 2rem;
+    margin: 0 10px;
+    display: flex;
+    align-items: flex-end;
+    transition: .6s cubic-bezier(.28,-0.03,0,.99);
+    box-shadow: 20px 0px 30px -5px lightskyblue;
+    }
+    .card .row {
+    color: white;
+    display: flex;
+    flex-wrap: nowrap;
+    }
+
+    .card .icon {
+    position: absolute;
+    background: #223;
+    color: white;
+    border-radius: 100%;
+    height: 70px;
+    width: 70px;
+    margin-left: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    }
+
+    .card .row .description {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    overflow: hidden;
+    height: 90px;
+    width: 550px;
+    }
+
+
+    .description p {
+    color: whitesmoke;
+    height: 100%;
+    margin-left: 100px;
+    margin-top: 0;
+    margin-bottom: 0;
+    }
+
+    .description h4 {
+    text-transform: uppercase;
+    margin-left: 90px;
+    margin-top: 5px;
+    margin-bottom: 0;
+    }
+
+
+    input {
+    display: none;
+    }
+
+    input:checked + label {
+    width: 600px;
+    }
+
+    input:checked + label .descripcion {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+    }
+
+    .card[for ="c1"]{
+    background-image: url(imagenes/productos/fondos/fondo1.jpg);
+    }
+
+    .card[for ="c2"] {
+    background-image: url(imagenes/productos/fondos/fondo2.jpg);
+    }
+
+    .card[for ="c3"] {
+    background-image: url(imagenes/productos/fondos/fondo7.jpg);
+    }
+
+    .card[for ="c4"] {
+    background-image: url(imagenes/productos/fondos/fondo6.jpg);
+    }
+    /* Aca termina la parte sacada de un video de youtube*/
+
+
+    /*Inicio de la animacion de los productos*/
+    @keyframes show {
+    0% {
+        opacity: 0;
+        scale: 25%;
+    }
+    70% {
+        opacity: 1;
+        scale: 100%;
+    }
+    }
+
+
+    #animacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    view-timeline-name: --imagen;
+    view-timeline-axis: block;
+
+    animation-timeline: --imagen;
+    animation-name: show;
+    border-bottom: solid 2px lightskyblue;
+    }
+
+    #lista {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    }
+
+
+    li a{
+    text-decoration: none;
+    color: whitesmoke;
+    }
+
+
+    /* Es para la seccion de celulares, tablets, monitores y heladeras */
+    .contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    }
+
+    .texto {
+    background: rgba(28, 28, 27, 1);
+    border-radius: 10px;
+    border: solid 2px #61e5ff;
+    text-align: center;
+    }
+
+    /* Seccion de CELULARES */
+    .contenedor-celulares {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    margin: 4%;
+    background: rgba(28, 28, 27, 0.75) ;
+    border-radius: 20px;
+    border: double 2px #e3a702;
+    }
+
+    .celular {
+    display: flex;
+    background-color: transparent;
+    justify-content: center;
+    height: 80%;
+
+    }
+    .celular img {
+    background-color: transparent; 
+    height: 45%;
+    width: 80%;
+    height: 100%;
+    border-radius: 20px;
+
+    }
+
+    /*Inicio de la seccion de Monitores*/
+    .contenedor-monitor {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    margin: 50px 20px;
+    background: rgba(28, 28, 27, 0.75) ;
+    border-radius: 20px;
+    border: double 2px #e3a702;
+    }
+
+    .monitor {
+    display: flex;
+    background-color: transparent;
+    justify-content: center;
+    height: 80%;
+    }
+    .monitor img {
+    background-color: transparent;
+    border-radius: 20px;
+    height: 80%;
+    width: 80%;
+
+    }
+
+
+    /*Inicio de la seccion de tablets*/
+    .contenedor-tablet {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    margin: 50px 20px ;
+    padding-top: 80px;
+    background: rgba(28, 28, 27, 0.75) ;
+    border-radius: 20px;
+    border: double 2px #e3a702;
+    }
+
+    .tablet img {
+    background-color: transparent;
+    border-radius: 20px;
+    height: 80%;
+    width: 80%;
+    
+    }
+
+    .tablet {
+    display: flex;
+    background-color: transparent;
+    justify-content: center;
+    height: 70%;
+       
+    }
+
+
+    /* Inicio de la seccion HELADERAS */
+    .contenedor-heladeras {
+    width: 25%;
+    margin: 50px 20px ;
+    background: rgba(28, 28, 27, 0.75) ;
+    border-radius: 20px;
+    border: double 2px #e3a702;
+    }
+    .heladera img {
+    border-radius: 20px;
+    background-color: transparent;
+    height: 90%;
+    width: 90%;
+    
+    }
+
+    .heladera {
+    display: flex;
+    background-color: transparent;
+    justify-content: center;
+    height: 90%;
+       
+    }
+    
+/*Fin de la pagina PRODUCTOS*/
+
+
+/*Inicio de la pagina OFERTAS*/
+
+.oferta-semanal {
+    display: flex;
+    border: solid 2px #e3a702;
+    border-radius: 20px;
+}
+
+.oferta {
+    background-color: #0ee00e;
+}
+
+/*Fin de la pagina OFERTAS*/
